@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head', {title}) %>
+  <body>
+    <%- include('navbar', {links: links}) %>
+
+    <h1>Home</h1>
+    <h3>Home page</h3>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione maiores
+      ipsa fugiat molestias molestiae provident, soluta, laborum fugit error
+      recusandae sint libero, eius magni? Consequuntur expedita quidem quas
+      consectetur accusamus.
+    </p>
+    <ul>
+      <% users.forEach((user) => { %> <%- include('users/user', {user: user});
+      %> <% }); %>
+    </ul>
+  </body>
+</html>

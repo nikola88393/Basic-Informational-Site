@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head', {title}) %>
+  <body>
+    <%- include('navbar', {links: links}) %>
+
+    <h1>404 - Page not found!</h1>
+    <h3>Oops.., the resource can't be found :/</h3>
+    <ul>
+      <% users.forEach((user) => { %> <%- include('users/user', {user: user});
+      %> <% }); %>
+    </ul>
+  </body>
+</html>
