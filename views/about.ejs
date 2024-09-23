@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('head', {title}) %>
+  <%- include('partials/head', {title}) %>
   <body>
-    <%- include('navbar', {links: links}) %>
+    <%- include('partials/navbar', {links: links}) %>
 
     <h1>About</h1>
     <h3>About this page</h3>
@@ -16,5 +16,6 @@
       <% users.forEach((user) => { %> <%- include('users/user', {user: user});
       %> <% }); %>
     </ul>
+    <%- include('partials/footer') %>
   </body>
 </html>
